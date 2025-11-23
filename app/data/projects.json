@@ -1,0 +1,35 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "name": "VGenx",
+      "description": "v-genx: The ultimate CLI tool to quickly generate boilerplate files for Vue 2 and Vue 3 components",
+      "icon": "i-simple-icons-npm",
+      "url": "https://www.npmjs.com/package/v-genx",
+      "thumbnail": "/projects/v-genx.jpg"
+    },
+    {
+      "id": 2,
+      "name": "To-Do List CRUD API",
+      "description": " A REST API built with Express.js, TypeScript, Prisma, and SQLite. ",
+      "url": "https://github.com/edgonzalez24/to-do-list-CRUD",
+      "thumbnail": "/projects/to-to-list.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Clinica Dental Ayala - Landing Page",
+      "description": "A landing page for a dental clinic built with Nuxt.js and Tailwind CSS.",
+      "icon": "i-simple-icons-netlify",
+      "url": "https://clinicadentalayaladev.netlify.app/",
+      "thumbnail": "/projects/clinicadentalayala.jpg"
+    },
+    {
+      "id": 4,
+      "name": "E2A Solution - Landing Page",
+      "description": "A landing page for a dental clinic built with Vue3 and Tailwind CSS.",
+      "icon": "i-simple-icons-vuedotjs",
+      "url": "https://e2asolutions.com/",
+      "thumbnail": "/projects/e2asolutions.jpg"
+    }
+  ]
+}
