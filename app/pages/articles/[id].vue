@@ -1,5 +1,5 @@
 <template>
-  <u-page :ui="{ center: 'lg:col-span-7!' }" class="relative mx-auto max-w-screen-2xl md:px-8 pb-10 pt-24">
+  <u-page :ui="{ center: 'lg:col-span-7!' }" class="relative mx-auto max-w-screen-2xl md:px-8 pb-10 pt-24 bg-transparent">
     <template #right>
       <u-page-aside :ui="{ root: 'lg:col-span-3!' }">
         <u-page-anchors 
@@ -77,12 +77,10 @@
 
 <script lang="ts" setup>
 import dayjs from "dayjs";
-import l, { get } from "lodash";
-// import appMeta from "~/app.meta";
+import l from "lodash";
 
 const route = useRoute();
 const authorEl = ref<HTMLElement | null>();
-const relatedArticlesEl = ref<HTMLElement | null>();
 const readingTimeText = computed(() => (data.value?.meta as any).readingTime?.text);
 const clipboard = useClipboard();
 const toast = useToast();
@@ -100,7 +98,7 @@ const { data: surround } = await useAsyncData(`${route.path}-surround`, () => {
 
 const getTumbnail = (thumbnailPath: string) => {
   const config = useRuntimeConfig();
-  return `${config.public.supabaseBucketUrl}/${thumbnailPath}`;
+  return `${config.public.supabaseBucketUrl}${thumbnailPath}`;
 };
 
 const copyLink = async() => {
@@ -127,21 +125,14 @@ const updateMeta = () => {
   useSeoMeta({
     title: data.value?.title,
     description: data.value?.description,
+    ogImage: getTumbnail(data.value?.thumbnail ?? ''),
+    twitterImage: getTumbnail(data.value?.thumbnail ?? ''),
+    
   });
-  defineOgImageComponent("Article", {
-    thumbnail: getTumbnail(data.value?.thumbnail ?? ''),
-    title: data.value?.title,
-    author: {
-      name: data.value?.author,
-    },
-  });
+  defineOgImage({
+    url: getTumbnail(data.value?.thumbnail ?? '')
+  })
 }
 
 updateMeta();
-
-// onMounted(() => {
-//   const contentEl = document.getElementById("content");
-//   authorEl.value = contentEl?.querySelector("#author-about");
-//   relatedArticlesEl.value = document.documentElement?.querySelector("#related-articles") as HTMLElement | undefined;
-// });
 </script>

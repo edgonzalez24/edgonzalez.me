@@ -1,8 +1,10 @@
 <template>
-  <u-app>
+  <div>
     <div class="blob-container">
       <div class="blob left-blob"></div>
       <div class="blob right-blob"></div>
+    </div>
+    <u-app>
       <Header />
       <u-main>
         <u-container>
@@ -10,8 +12,8 @@
         </u-container>
       </u-main>
       <Footer />
-    </div>
-  </u-app>
+    </u-app>
+  </div>
 </template>
 
 <script setup>
