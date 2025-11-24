@@ -33,7 +33,6 @@ export default defineNuxtConfig({
   },
   umami: {
     id: process.env.UNAMI_WEBSITE_ID || '',
-    host: process.env.BASE_URL || '',
     autoTrack: true,
   },
 })
