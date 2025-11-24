@@ -33,6 +33,7 @@ export default defineNuxtConfig({
   },
   umami: {
     id: process.env.UNAMI_WEBSITE_ID || '',
+    host: 'https://cloud.umami.is',
     autoTrack: true,
   },
 })
