@@ -13,6 +13,7 @@ export default defineNuxtConfig({
     '@nuxtjs/sitemap',
     '@nuxtjs/seo',
     '@vueuse/nuxt',
+    'nuxt-umami'
   ],
   content: {
     build: {
@@ -29,5 +30,10 @@ export default defineNuxtConfig({
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1, maximum-scale=1',
     },
-  }
+  },
+  umami: {
+    id: process.env.UNAMI_WEBSITE_ID || '',
+    host: process.env.BASE_URL || '',
+    autoTrack: true,
+  },
 })
