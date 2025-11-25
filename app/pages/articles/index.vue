@@ -16,10 +16,17 @@
       </u-blog-posts>
     </u-page-body>
   </u-page>
+  <!-- lo -->
 </template>
 
 <script lang="ts" setup>
-const { data: articles } = await useAsyncData("articles-home", () => queryCollection("articles").all());
+const { data: articlesRaw } = await useAsyncData("articles-home", () => queryCollection("articles").all());
+
+const articles = computed(() =>
+  (articlesRaw.value || []).sort(
+    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
+  )
+);
 
 const getTumbnail = (thumbnailPath: string) => {
   const config = useRuntimeConfig();
