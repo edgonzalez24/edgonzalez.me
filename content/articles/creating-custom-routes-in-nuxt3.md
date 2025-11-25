@@ -1,6 +1,6 @@
 ---
 title: "Creating Custom Routes in Nuxt3 (Without Losing Your Mind)"
-date: 2025-11-22
+date: 2025-05-05
 description: Learn how to create custom routes in Nuxt 3 without losing your mind, how to disable automatic routing, and how to organize your route files with a clean architecture.
 tags: [nuxt3, vue, javascript, webdev]
 author: Edwin Gonzalez
