@@ -12,6 +12,7 @@
           :date="article.date"
           :to="article.path"
           variant="naked"
+          @click="umTrackEvent(`cta-article-${article.path}`)"
         ></u-blog-post>
       </u-blog-posts>
     </u-page-body>

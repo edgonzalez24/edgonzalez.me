@@ -20,6 +20,7 @@
         variant="outline"
         :reverse="true"
         class="[--spotlight-color:var(--ui-error)]"
+        @click="umTrackEvent(`cta-project-${project.slug}`)"
       >
         <img 
           :src="getProjectThumbnail(project.thumbnail)"

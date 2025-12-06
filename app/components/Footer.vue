@@ -6,19 +6,27 @@
           :columns="[
             { 
               label: 'Support me',
-              children: supports.map((p) => <FooterColumnLink>{ label: p.name, to: p.url, target: '_blank', icon: p.icon.name }) 
+              children: supports.map((p) => ({ label: p.name, to: p.url, target: '_blank', icon: p.icon.name, onClick: () => { umTrackEvent('cta-buy-me-a-coffee')} })) 
             },
-        ]"></u-footer-columns>
+        ]"
+        />
       </u-container>
     </template>
     <template #right>
-      <u-button :href="s.url" target="_blank" v-for="s in socials ?? []" :title="s.name" :icon="s.icon.name" color="neutral" variant="ghost"> </u-button>
+      <u-button 
+        :href="s.url" 
+        target="_blank" 
+        v-for="s in socials ?? []" :title="s.name"
+        :icon="s.icon.name"
+        color="neutral"
+        variant="ghost"
+        @click="umTrackEvent(`cta-social-${s.name.toLocaleLowerCase}-footer`)"
+      />
     </template>
   </u-footer>
 </template>
 
 <script lang="ts" setup>
-import type { FooterColumnLink } from "@nuxt/ui";
 
 const supports = [
   {
