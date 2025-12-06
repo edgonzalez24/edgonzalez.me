@@ -12,7 +12,7 @@
           :date="article.date"
           :to="article.path"
           variant="naked"
-          @click="umTrackEvent(`cta-article-${article.path}`)"
+          @click="umTrackEvent(`cta-article-${getTitleSlug(article.path)}`)"
         ></u-blog-post>
       </u-blog-posts>
     </u-page-body>
@@ -32,6 +32,10 @@ const articles = computed(() =>
 const getTumbnail = (thumbnailPath: string) => {
   const config = useRuntimeConfig();
   return `${config.public.supabaseBucketUrl}/${thumbnailPath}`;
+};
+
+const getTitleSlug = (path: string) => {
+  return path.split('/').pop() || 'unknown';
 };
 
 </script>
