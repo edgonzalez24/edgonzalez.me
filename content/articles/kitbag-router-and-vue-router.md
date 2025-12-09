@@ -12,9 +12,9 @@ thumbnail: /articles/kitbag-router-vs-vue-router/thumbnail.jpg
 
 **Vue Router** package has been standard for handling application routing and navigation. The community and support have been crucial and fundamental to our projects.
 
-But recently, a new alternative has emerged in the community: **Kitbag Router**. Considered a modern router written and adapted with TypeScript, it aims to improve the developer experience by offering a typed, secure, and robust tool for applications. This alternative search to eliminate routing problems and provide a more user friendly experience and developer experience.
+But recently, a new alternative has emerged in the community: **Kitbag Router**. Considered a modern router written and adapted with TypeScript, it aims to improve the developer experience by offering a typed, secure, and robust tool for applications. This alternative search to eliminate routing problems and provide a more user friendly experience (UX) and developer experience (DX).
 
-First, let's review key differences, real world use cases, and recommendations to understand in which situations it is best to use them depending on the type of project we are working on.
+First, let's review key differences, weak points or risks, and recommendations to understand in which situations it is best to use them depending on the type of project we are working on.
 
 ## What is Vue Router?
 [Vue Router](https://router.vuejs.org/) is the official router of the Vue ecosystem. It manages static and dynamic routes, declarative navigation, scrolling behavior, history modes, and more.
@@ -96,15 +96,15 @@ If you are considering migrating from **Vue Router** to **Kitbag Router**, it is
 
 - 🧑‍💻 **_Learning curve:_** Perhaps way routes are defined is more explicit, which can feel more verbose compared to simpler definitions. Some developers in the community see this as "more upfront work," especially in small projects.
 
-- 🤔 **_There may be some problems if team doesn't yet have necessary experience with TypeScript._**
+- 🤔 **_Limitations for teams that do not use TypeScript:_** It requires a solid understanding of TypeScript to truly benefit from it. In teams that work primarily with JavaScript, this can become a real obstacle.
+
+- 🔧 **_More explicit configuration = greater verbosity:_** This is a great advantage for TypeScript, but it can be tedious; defining routes can feel longer, or complex nested routes require more code.
 
 
 ## Conclusion
 **Kitbag Router** is a very attractive and could be an excellent alternative, especially if you want to experiment with a new approach to routing in modern projects using Vue 3 and TypeScript, where type safety and maintainability are paramount. If you're starting a new project, it might be worth exploring it thoroughly.
 
 However, given that it's still relatively new and doesn't have the same adoption or maturity as **Vue Router**, its use should be carefully considered, along with validating compatibility requirements and the potential learning curve. I'd like to emphasize that it's an open-source project, so your input is very helpful. [If you're interested, you can check the official repository.](https://github.com/kitbagjs/router)
-
-
 
 
 ## Sources and links consulted
