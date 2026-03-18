@@ -6,7 +6,7 @@
           :columns="[
             { 
               label: 'Support me',
-              children: supports.map((p) => ({ label: p.name, to: p.url, target: '_blank', icon: p.icon.name, onClick: () => { umTrackEvent('cta-buy-me-a-coffee')} })) 
+              children: supports.map((p) => ({ label: p.name, to: p.url, target: '_blank', icon: p.icon.name, onClick: () => { umTrackEvent('cta-ko-fi')} })) 
             },
         ]"
         />
@@ -30,11 +30,11 @@
 
 const supports = [
   {
-    name: "BuyMeACoffee",
-    url: "https://buymeacoffee.com/tuxgonzalez",
+    name: "Ko-fi",
+    url: "https://ko-fi.com/edgonzalez24",
     icon: {
-        name: "simple-icons:buymeacoffee",
-        url: "https://api.iconify.design/fluent-emoji-flat:buymeacoffe.svg"
+        name: "simple-icons:kofi",
+        url: "https://api.iconify.design/fluent-emoji-flat:kofi.svg"
     }
   }
 ];
