@@ -61,7 +61,7 @@
 
           <!-- LinkedIn -->
           <a 
-            href="https://www.linkedin.com/in/edwin-gonz%C3%A1lez-54162618a/"
+            href="https://www.linkedin.com/in/edwin-gonzalez-54162618a/"
             target="_blank"
             class="text-gray-400 transition duration-500 ease-in-out hover:text-gray-500 active:text-gray-600"
             @click="umTrackEvent('cta-social-linkedin')"

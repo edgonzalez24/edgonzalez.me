@@ -58,7 +58,7 @@ const socials = [
   },
   {
     name: "LinkedIn",
-    url: "https://www.linkedin.com/in/edwin-gonz%C3%A1lez-54162618a/",
+    url: "https://www.linkedin.com/in/edwin-gonzalez-54162618a/",
     icon: {
       name: "mdi:linkedin",
       url: "https://api.iconify.design/mdi:linkedin.svg"
