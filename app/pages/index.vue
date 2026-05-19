@@ -93,7 +93,7 @@ const bg = ref("");
 
 onMounted(() => {
   const config = useRuntimeConfig();
-  bg.value = `${config.public.supabaseBucketUrl}/portrait.jpg`;
+  bg.value = 'https://res.cloudinary.com/dhgcfzhm0/image/upload/v1779231163/portrait.jpg';
 });
 
 </script>

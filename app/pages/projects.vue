@@ -23,7 +23,7 @@
         @click="umTrackEvent(`cta-project-${project.slug}`)"
       >
         <img 
-          :src="getProjectThumbnail(project.thumbnail)"
+          :src="project.thumbnail"
           :alt="project.name"
           class="w-full h-48 object-cover rounded-lg"
         />
@@ -35,9 +35,4 @@
 import projects from "@/data/projects.json";
 
   const projectsList = computed(() => projects.projects);
-
-  const getProjectThumbnail = (thumbnail: string) => {
-    const config = useRuntimeConfig();
-    return `${config.public.supabaseBucketUrl}${thumbnail}`;
-  };
 </script>

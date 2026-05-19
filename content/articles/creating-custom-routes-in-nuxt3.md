@@ -4,7 +4,7 @@ date: 2025-05-05
 description: Learn how to create custom routes in Nuxt 3 without losing your mind, how to disable automatic routing, and how to organize your route files with a clean architecture.
 tags: [nuxt3, vue, javascript, webdev]
 author: Edwin Gonzalez
-thumbnail: /articles/creating-custom-routes-in-nuxt3.webp
+thumbnail: https://res.cloudinary.com/dhgcfzhm0/image/upload/v1779231246/creating-custom-routes-in-nuxt3_brrrmq.webp
 ---
 
 I'd like to share an experience I had a couple of days ago during a work challenge, which may have happened to you or could happen to you if you use Nuxt3. Let's jump!

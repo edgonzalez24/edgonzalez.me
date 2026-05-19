@@ -4,7 +4,7 @@ date: 2025-11-25
 description: Solution to the critical error in Arch Linux - Kernel Panic - initramfs images could not be generated (GRUB).
 tags: [linux, arch-linux, opensource]
 author: Edwin Gonzalez
-thumbnail: /articles/broken-arch-linux/kernel-panic.png
+thumbnail: https://res.cloudinary.com/dhgcfzhm0/image/upload/v1779231242/kernel-panic_kwkqwr.png
 ---
 
 In this article, I will document how I resolved a critical error on Arch Linux where the system failed to generate initramfs images due to a corrupted mkinitcpio.conf file. In simpler terms, GRUB was not functioning correctly to proceed with system initialization after a faulty dependency upgrade.
@@ -17,7 +17,7 @@ error: fs/fshelp.c:find_file:266: file '/initramfs-linux.img' not found
 
 and then **KERNEL PANIC**!
 
-![Kernel panic](https://oqaztlycxyasqifonfwp.supabase.co/storage/v1/object/public/website/articles/broken-arch-linux/kernel-panic.png)
+![Kernel panic](https://res.cloudinary.com/dhgcfzhm0/image/upload/v1779231242/kernel-panic_kwkqwr.png)
 
 ## Cause of the problem
 

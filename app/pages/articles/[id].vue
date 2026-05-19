@@ -98,7 +98,7 @@ const { data: surround } = await useAsyncData(`${route.path}-surround`, () => {
 
 const getTumbnail = (thumbnailPath: string) => {
   const config = useRuntimeConfig();
-  return `${config.public.supabaseBucketUrl}${thumbnailPath}`;
+  return `${config.public.claudinaryBucketURL}${thumbnailPath}`;
 };
 
 const copyLink = async() => {

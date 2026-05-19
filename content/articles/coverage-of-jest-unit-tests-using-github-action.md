@@ -4,7 +4,7 @@ date: 2023-02-03
 description: Discover how to set up a GitHub Action to generate and visualize coverage reports for Jest unit tests.
 tags: [jest, github-action, javascript, webdev]
 author: Edwin Gonzalez
-thumbnail: /articles/coverage-of-jest-unit-tests-using-github-action/thumbnail.webp
+thumbnail: https://res.cloudinary.com/dhgcfzhm0/image/upload/v1779231244/thumbnail_dwb5ue.webp
 ---
 
 Code coverage is an important metric for measuring the quality of your software tests. It provides a way to quantify how much of your code is being tested and helps you identify areas of your code that may not be adequately covered by your tests.
@@ -19,7 +19,7 @@ Now, we will use the following tool: [Jest coverage report action](https://www.c
 It’s a tool that helps you keep track of coverage of your project. Forms a reporting comment for each PR. In addition, highlights files with reduced coverage and new files
 ::
 
-![Track code](https://oqaztlycxyasqifonfwp.supabase.co/storage/v1/object/public/website/articles/coverage-of-jest-unit-tests-using-github-action/track-code.webp)
+![Track code](https://res.cloudinary.com/dhgcfzhm0/image/upload/v1779231244/track-code_ss1ich.webp)
 
 ## How can we set up our project?
 
@@ -128,7 +128,7 @@ I share the final result, once you execute your GitHub action, which we can obse
 
 Also mention that the report is executed again if a new commit is made to the PR.
 
-![Pull request](https://oqaztlycxyasqifonfwp.supabase.co/storage/v1/object/public/website/articles/coverage-of-jest-unit-tests-using-github-action/pull-request.webp)
+![Pull request](https://res.cloudinary.com/dhgcfzhm0/image/upload/v1779231244/pull-request_jmcnhs.webp)
 
 
 In summary, coverage of Jest unit tests using GitHub Actions is important because it helps you:

@@ -19,7 +19,7 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     public: {
-      supabaseBucketUrl: process.env.SUPABASE_BUCKET_URL || '',
+      claudinaryBucketURL: process.env.CLAUDINARY_BUCKET_URL || '',
     }
   },
   robots: {

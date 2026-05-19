@@ -4,10 +4,10 @@ date: 2025-12-09
 description: A powerful new alternative for routing in VueJS; it's worth switching from the official router.
 tags: [vuejs, frontend]
 author: Edwin Gonzalez
-thumbnail: /articles/kitbag-router-vs-vue-router/thumbnail.jpg
+thumbnail: https://res.cloudinary.com/dhgcfzhm0/image/upload/v1779231245/thumbnail_jqapf3.jpg
 ---
 
-![Thumbail image](https://oqaztlycxyasqifonfwp.supabase.co/storage/v1/object/public/website/articles/kitbag-router-vs-vue-router/banner.jpg)
+![Thumbail image](https://res.cloudinary.com/dhgcfzhm0/image/upload/v1779231245/banner_bes04k.jpg)
 
 
 **Vue Router** package has been standard for handling application routing and navigation. The community and support have been crucial and fundamental to our projects.
@@ -40,7 +40,7 @@ At the heart of **Kitbag Router** lies a commitment to enhancing the developer e
 > Kitbag router - official website
 ::
 
-![Kitbag logo](https://oqaztlycxyasqifonfwp.supabase.co/storage/v1/object/public/website/articles/kitbag-router-vs-vue-router/kitbag.webp)
+![Kitbag logo](https://res.cloudinary.com/dhgcfzhm0/image/upload/v1779231245/kitbag_jufle7.webp)
 
 ### Features of Kitbag router
 

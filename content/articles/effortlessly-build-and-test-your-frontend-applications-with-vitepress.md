@@ -4,7 +4,7 @@ date: 2023-02-09
 description: Learn how to build, structure, and test your frontend applications using VitePress with this step-by-step tutorial.
 tags: [vitepress, vue, javascript, webdev]
 author: Edwin Gonzalez
-thumbnail: /articles/effortlessly-build-and-test-your-frontend-applications-with-vitepress/thumbmail.jpg
+thumbnail: https://res.cloudinary.com/dhgcfzhm0/image/upload/v1779231242/thumbmail_egtlqh.jpg
 ---
 
 First of all, we must talk about what is vitepress. VitePress is a modern static site generator based on the Vite front-end build tool. It is designed to be fast and efficient, making it a great choice for building small to medium-sized websites and blogs. With its easy-to-use interface and compatibility with a wide range of technologies, including Vue.js, JavaScript, and CSS, VitePress is a versatile option for front-end development.
@@ -264,6 +264,6 @@ export default {
 
 Now, you can create a blog using vitePress in a very simple way. I share the [repo Github](https://github.com/edgonzalez24/blog-vitepress) so you can review the source code.
 
-![Demo Image](https://oqaztlycxyasqifonfwp.supabase.co/storage/v1/object/public/website/articles/effortlessly-build-and-test-your-frontend-applications-with-vitepress/demo.webp)
+![Demo Image](https://res.cloudinary.com/dhgcfzhm0/image/upload/v1779231243/demo_qkllvg.webp)
 
 Thank you for reading! we read soon. 🙌🏽🙌🏽
