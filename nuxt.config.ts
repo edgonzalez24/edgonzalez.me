@@ -2,6 +2,22 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
+  i18n: {
+    locales: [
+      { code: 'en', language: 'en-US', name: 'English', file: 'en.json' },
+      { code: 'es', language: 'es-SV', name: 'Español', file: 'es.json' },
+    ],
+    defaultLocale: 'en',
+    strategy: 'prefix_except_default',
+    langDir: 'locales',
+    vueI18n: './i18n/i18n.config.ts',
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'i18n_redirected',
+      redirectOn: 'root',
+      alwaysRedirect: false,
+    },
+  },
   sitemap: {
     autoLastmod: true,
     discoverImages: true,
@@ -17,20 +33,15 @@ export default defineNuxtConfig({
       { label: "Last Modified", select: "sitemap:lastmod", width: "20%" },
     ],
   },
-  runtimeConfig: {
-    public: {
-      claudinaryBucketURL: process.env.CLAUDINARY_BUCKET_URL || '',
-    }
-  },
   robots: {
     disallow: ["/app/**", "/api/**", "/_nuxt/**"],
   },
+  site: {
+    name: 'Edwin González',
+  },
   app: {
     head: {
-      htmlAttrs: {
-        lang: 'en'
-      },
-      title: 'Edwin González - Frontend Developer',
+      titleTemplate: '%s',
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1, maximum-scale=1',
     },
@@ -39,6 +50,7 @@ export default defineNuxtConfig({
     options: { scrollBehaviorType: "smooth" },
   },   
   modules: [
+    '@nuxtjs/i18n',
     '@nuxt/ui',
     '@nuxt/content',
     '@nuxtjs/sitemap',
