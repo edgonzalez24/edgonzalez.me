@@ -2,6 +2,7 @@
 const { t } = useI18n()
 const localePath = useLocalePath()
 const route = useRoute()
+const isSearchOpen = useSearchModal()
 
 const navigationLinks = computed(() => [
   { name: t('nav.home'), href: localePath('/') },
@@ -29,7 +30,14 @@ const navigationLinks = computed(() => [
           </NuxtLink>
         </p>
       </div>
-      <div class="flex lg:flex-1 lg:justify-end">
+      <div class="flex items-center gap-x-3 lg:flex-1 lg:justify-end">
+        <UButton
+          icon="i-lucide-search"
+          color="neutral"
+          variant="ghost"
+          aria-label="Search articles"
+          @click="isSearchOpen = true"
+        />
         <LanguageSwitcher />
       </div>
     </nav>
