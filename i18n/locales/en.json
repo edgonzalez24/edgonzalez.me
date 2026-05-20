@@ -69,6 +69,11 @@
     "newBadge": "New",
     "fallbackNotice": "This article is not yet available in Spanish. Showing the English version."
   },
+  "search": {
+    "placeholder": "Search articles...",
+    "noResults": "No articles found",
+    "typeToSearch": "Type to search articles"
+  },
   "footer": {
     "supportMe": "Support me"
   },

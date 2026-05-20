@@ -12,6 +12,7 @@
         </u-container>
       </u-main>
       <Footer />
+      <SearchModal />
     </u-app>
   </div>
 </template>
