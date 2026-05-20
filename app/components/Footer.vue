@@ -2,13 +2,13 @@
   <u-footer class="border-t border-t-default">
     <template #bottom>
       <u-container>
-        <u-footer-columns 
+        <u-footer-columns
           :columns="[
-            { 
-              label: 'Support me',
-              children: supports.map((p) => ({ label: p.name, to: p.url, target: '_blank', icon: p.icon.name, onClick: () => { umTrackEvent('cta-ko-fi')} })) 
+            {
+              label: t('footer.supportMe'),
+              children: supports.map((p) => ({ label: p.name, to: p.url, target: '_blank', icon: p.icon.name, onClick: () => { umTrackEvent('cta-ko-fi') } }))
             },
-        ]"
+          ]"
         />
       </u-container>
     </template>
@@ -27,6 +27,7 @@
 </template>
 
 <script lang="ts" setup>
+const { t } = useI18n()
 
 const supports = [
   {

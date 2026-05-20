@@ -1,0 +1,81 @@
+{
+  "nav": {
+    "home": "Home",
+    "aboutMe": "About Me",
+    "projects": "Projects",
+    "blog": "Blog"
+  },
+  "home": {
+    "greeting": "Hey 👋",
+    "title": "I'm Edwin González",
+    "bio": "Developer with a deep passion for creating visually stunning and highly functional web applications. 💻👓",
+    "social": "Social"
+  },
+  "aboutMe": {
+    "title": "About me",
+    "bio": "I'm Edwin González, a frontend developer from El Salvador with +3 years of experience. My journey in web development began with a fascination with how websites are created, how technology works, and the desire to create perfect digital tools and products. Since then, I have honed my skills in various frontend technologies and methodologies, always with the goal of delivering high-quality, effective solutions.",
+    "experience": "Experience",
+    "jobs": [
+      {
+        "date": "January 2021 ~ Present ● London, England, United Kingdom",
+        "title": "Frontend Software Engineer at Fitune • Fitness & Wellness Software",
+        "bullets": [
+          "Develop new user-facing features",
+          "Collaborate with other team members and stakeholders",
+          "Assure that all user input is validated before submitting to back-end",
+          "Building reusable code for future use",
+          "Maintaining brand consistency throughout the design",
+          "Define how the application looks and how it works",
+          "Translate UI/UX design wireframes to actual code",
+          "Implement unit testing (Jest)",
+          "Continuous development of applications with technologies such as: Vue, RoR and Js"
+        ]
+      },
+      {
+        "date": "October 2019 ● San Salvador, El Salvador.",
+        "title": "Front End Developer at Elaniin",
+        "bullets": [
+          "Build web applications with different technologies such as: ReactJS and Vuejs, that are friendly with responsive design",
+          "Bringing mock-ups to life using HTML, CSS, JavaScript",
+          "Collaborating closely with the team to support projects during phases of delivery",
+          "Maintaining an organized workflow using a project management tool (like GitLab)",
+          "Testing to identify bugs and technical issues before and after deploying"
+        ]
+      },
+      {
+        "date": "May 2019 ● San Salvador, El Salvador.",
+        "title": "Front End Developer Internship at Elaniin",
+        "bullets": [
+          "Analysis and estimation of requirement and development in SPA",
+          "Bringing mock-ups to life using HTML, CSS, JavaScript with CRM HubSpot and others CRM",
+          "Maintenance and Add-ons of websites created in Wordpress or with technologies such as: NuxtJS(VueJS) and ReactJS",
+          "Deploy SPA made in React JS to servers"
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projects",
+    "description": "In this section, you'll find a selection of the projects I've developed as part of my work as a web developer. Each project reflects my focus on creating efficient, scalable applications with an excellent user experience. From intuitive interfaces to complete backend solutions, here you can explore how to transform ideas into functional products."
+  },
+  "articles": {
+    "title": "Blog",
+    "headline": "Blog",
+    "allArticles": "All articles",
+    "relatedArticles": "Related articles",
+    "shareArticle": "Share this article",
+    "copyUrl": "Copy URL",
+    "copiedToClipboard": "Copied to clipboard",
+    "newBadge": "New",
+    "fallbackNotice": "This article is not yet available in Spanish. Showing the English version."
+  },
+  "footer": {
+    "supportMe": "Support me"
+  },
+  "seo": {
+    "home": "Edwin González - Frontend Developer",
+    "aboutMe": "About Me",
+    "projects": "Projects",
+    "articles": "Blog"
+  }
+}

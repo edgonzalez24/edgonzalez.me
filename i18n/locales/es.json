@@ -1,0 +1,81 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "aboutMe": "Sobre mí",
+    "projects": "Proyectos",
+    "blog": "Blog"
+  },
+  "home": {
+    "greeting": "Hey 👋",
+    "title": "Soy Edwin González",
+    "bio": "Desarrollador con una profunda pasión por crear aplicaciones web visualmente impresionantes y altamente funcionales. 💻👓",
+    "social": "Social"
+  },
+  "aboutMe": {
+    "title": "Sobre mí",
+    "bio": "Soy Edwin González, un desarrollador frontend de El Salvador con más de 3 años de experiencia. Mi camino en el desarrollo web comenzó con una fascinación por cómo se crean los sitios web, cómo funciona la tecnología y el deseo de crear herramientas y productos digitales perfectos. Desde entonces, he perfeccionado mis habilidades en diversas tecnologías y metodologías frontend, siempre con el objetivo de entregar soluciones de alta calidad y efectivas.",
+    "experience": "Experiencia",
+    "jobs": [
+      {
+        "date": "Enero 2021 ~ Presente ● Londres, Inglaterra, Reino Unido",
+        "title": "Frontend Software Engineer en Fitune • Software de Fitness y Bienestar",
+        "bullets": [
+          "Desarrollar nuevas funcionalidades orientadas al usuario",
+          "Colaborar con otros miembros del equipo y partes interesadas",
+          "Asegurar que toda la entrada del usuario sea validada antes de enviarla al back-end",
+          "Construir código reutilizable para uso futuro",
+          "Mantener la consistencia de la marca en todo el diseño",
+          "Definir cómo se ve y funciona la aplicación",
+          "Traducir wireframes de diseño UI/UX a código real",
+          "Implementar pruebas unitarias (Jest)",
+          "Desarrollo continuo de aplicaciones con tecnologías como: Vue, RoR y JS"
+        ]
+      },
+      {
+        "date": "Octubre 2019 ● San Salvador, El Salvador.",
+        "title": "Desarrollador Front End en Elaniin",
+        "bullets": [
+          "Construir aplicaciones web con diferentes tecnologías como ReactJS y Vuejs, compatibles con diseño responsivo",
+          "Dar vida a maquetas usando HTML, CSS, JavaScript",
+          "Colaborar estrechamente con el equipo para dar soporte a proyectos durante las fases de entrega",
+          "Mantener un flujo de trabajo organizado usando una herramienta de gestión de proyectos (como GitLab)",
+          "Realizar pruebas para identificar errores y problemas técnicos antes y después del despliegue"
+        ]
+      },
+      {
+        "date": "Mayo 2019 ● San Salvador, El Salvador.",
+        "title": "Pasantía Desarrollador Front End en Elaniin",
+        "bullets": [
+          "Análisis y estimación de requerimientos y desarrollo en SPA",
+          "Dar vida a maquetas usando HTML, CSS, JavaScript con CRM HubSpot y otros CRM",
+          "Mantenimiento y complementos de sitios web creados en WordPress o con tecnologías como NuxtJS (VueJS) y ReactJS",
+          "Desplegar SPAs hechas en React JS en servidores"
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Proyectos",
+    "description": "En esta sección encontrarás una selección de los proyectos que he desarrollado como parte de mi trabajo como desarrollador web. Cada proyecto refleja mi enfoque en crear aplicaciones eficientes y escalables con una excelente experiencia de usuario. Desde interfaces intuitivas hasta soluciones completas, aquí puedes explorar cómo transformo ideas en productos funcionales."
+  },
+  "articles": {
+    "title": "Blog",
+    "headline": "Blog",
+    "allArticles": "Todos los artículos",
+    "relatedArticles": "Artículos relacionados",
+    "shareArticle": "Compartir este artículo",
+    "copyUrl": "Copiar URL",
+    "copiedToClipboard": "Copiado al portapapeles",
+    "newBadge": "Nuevo",
+    "fallbackNotice": "Este artículo aún no está disponible en español. Mostrando la versión en inglés."
+  },
+  "footer": {
+    "supportMe": "Apóyame"
+  },
+  "seo": {
+    "home": "Edwin González - Frontend Developer",
+    "aboutMe": "Sobre mí",
+    "projects": "Proyectos",
+    "articles": "Blog"
+  }
+}
