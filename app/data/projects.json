@@ -11,20 +11,21 @@
     },
     {
       "id": 2,
-      "slug": "to-do-list-crud-api",
-      "name": "To-Do List CRUD API",
-      "description": " A REST API built with Express.js, TypeScript, Prisma, and SQLite. ",
-      "url": "https://github.com/edgonzalez24/to-do-list-CRUD",
-      "thumbnail": "https://res.cloudinary.com/dhgcfzhm0/image/upload/v1779231171/to-do-list.png"
+      "slug": "website-builder",
+      "name": "Website Builder",
+      "description": "Fullstack app to build websites with Nuxt4 + GrapesJS + Supabase MCP",
+      "icon": "i-simple-icons-supabase",
+      "url": "https://grapesjs-nuxt4.vercel.app/",
+      "thumbnail": "https://res.cloudinary.com/dhgcfzhm0/image/upload/v1780888824/grapesjs-editor_cutlpx.png"
     },
     {
       "id": 3,
-      "slug": "clinica-dental-ayala-landing-page",
-      "name": "Clinica Dental Ayala - Landing Page",
-      "description": "A landing page for a dental clinic built with Nuxt.js and Tailwind CSS.",
-      "icon": "i-simple-icons-netlify",
-      "url": "https://clinicadentalayaladev.netlify.app/",
-      "thumbnail": "https://res.cloudinary.com/dhgcfzhm0/image/upload/v1779231170/clinicadentalayala.png"
+      "slug": "personal-portfolio",
+      "name": "Personal Portfolio",
+      "description": "A personal portfolio website built with Nuxt4, Umami tracking, and hosted on Vercel.",
+      "icon": "i-simple-icons-vercel",
+      "url": "https://edgonzalez-me.vercel.app/",
+      "thumbnail": "https://res.cloudinary.com/dhgcfzhm0/image/upload/v1780888088/portfolio_rmfkgf.png"
     },
     {
       "id": 4,
@@ -34,6 +35,32 @@
       "icon": "i-simple-icons-vuedotjs",
       "url": "https://e2asolutions.com/",
       "thumbnail": "https://res.cloudinary.com/dhgcfzhm0/image/upload/v1779231169/e2asolutions.png"
+    },
+        {
+      "id": 5,
+      "slug": "clinica-dental-ayala-landing-page",
+      "name": "Clinica Dental Ayala - Landing Page",
+      "description": "A landing page for a dental clinic built with Nuxt.js and Tailwind CSS.",
+      "icon": "i-simple-icons-netlify",
+      "url": "https://clinicadentalayaladev.netlify.app/",
+      "thumbnail": "https://res.cloudinary.com/dhgcfzhm0/image/upload/v1779231170/clinicadentalayala.png"
+    },
+    {
+      "id": 6,
+      "slug": "nuxt-pg-website",
+      "name": "Nuxt PG Website",
+      "description": "A fullstack website built with Nuxt4 + Nuxt UI + Postgres + Prisma + NeonPG + @scalar",
+      "icon": "i-simple-icons-nuxtdotjs",
+      "url": "https://github.com/edgonzalez24/nuxt-pg-website",
+      "thumbnail": "https://res.cloudinary.com/dhgcfzhm0/image/upload/v1780888334/nuxt-pg_wlbqpy.png"
+    },
+    {
+      "id": 7,
+      "slug": "to-do-list-crud-api",
+      "name": "To-Do List CRUD API",
+      "description": " A REST API built with Express.js, TypeScript, Prisma, and SQLite. ",
+      "url": "https://github.com/edgonzalez24/to-do-list-CRUD",
+      "thumbnail": "https://res.cloudinary.com/dhgcfzhm0/image/upload/v1779231171/to-do-list.png"
     }
   ]
 }
