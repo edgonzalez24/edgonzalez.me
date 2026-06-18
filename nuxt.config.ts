@@ -80,12 +80,6 @@ export default defineNuxtConfig({
     "/sitemap.xml": {
       isr: 3600,
     },
-    "/articles/**": {
-      isr: true,
-    },
-    "/es/articles/**": {
-      isr: true,
-    },
   },
   ui: {
     colorMode: false,
