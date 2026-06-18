@@ -96,7 +96,7 @@ const toast = useToast()
 const slug = computed(() => route.params.id as string)
 
 // Fetch article: prefer current locale, fall back to EN
-const { data, refresh } = await useAsyncData(`article-${locale.value}-${slug.value}`, async () => {
+const { data } = await useAsyncData(`article-${locale.value}-${slug.value}`, async () => {
   if (locale.value === 'es') {
     const es = await queryCollection('es_articles')
       .path(`/articles/es/${slug.value}`)
@@ -143,8 +143,16 @@ const share = async () => {
   await navigator.share({ url: route.fullPath })
 }
 
-const updateMeta = () => {
-  if (!article.value) return
+// Reactive getters ensure meta is set on SSR and updated on client navigation
+useSeoMeta({
+  title: () => article.value?.title ?? '',
+  description: () => article.value?.description ?? '',
+  ogImage: () => article.value?.thumbnail ?? '',
+  twitterImage: () => article.value?.thumbnail ?? '',
+})
+
+// article is guaranteed to be loaded here (awaited above), so these run correctly in SSR
+if (article.value) {
   useSchemaOrg([
     defineArticle({
       headline: article.value.title,
@@ -155,14 +163,6 @@ const updateMeta = () => {
       author: { name: article.value.author },
     }),
   ])
-  useSeoMeta({
-    title: article.value.title,
-    description: article.value.description,
-    ogImage: article.value.thumbnail ?? '',
-    twitterImage: article.value.thumbnail ?? '',
-  })
   defineOgImage({ url: article.value.thumbnail ?? '' })
 }
-
-updateMeta()
 </script>
