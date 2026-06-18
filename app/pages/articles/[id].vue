@@ -77,7 +77,7 @@
           variant="subtle"
         />
       </u-blog-posts>
-      <u-content-surround :surround="surroundLinks" />
+      <u-content-surround :surround="transformedSurround" />
     </u-page-body>
   </u-page>
 </template>
@@ -128,6 +128,14 @@ const { data: surroundLinks } = await useAsyncData(`${slug.value}-surround`, () 
   queryCollectionItemSurroundings('en_articles', article.value?.path ?? '', {
     fields: ['description'],
   })
+)
+
+// Remap content paths (/articles/en/slug) to actual URL paths (/articles/slug)
+// to prevent the SSG crawler from following broken /articles/en/... links
+const transformedSurround = computed(() =>
+  (surroundLinks.value?.map(item =>
+    item ? { ...item, path: localePath(`/articles/${item.path.split('/').pop() ?? ''}`) } : null
+  ) ?? undefined) as unknown as NonNullable<typeof surroundLinks.value>
 )
 
 
